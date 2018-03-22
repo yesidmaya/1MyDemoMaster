@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     int Sred ,Sgren ,Sbblu, Salpha;
     SeekBar sbrRed, sbrGreen, sbrBlue, sbrAlpha;
     View viewColor;
-    //TextView lbl_val_red,lbl_val_green,lbl_val_blue,lbl_val_alpha,lbl_val_exa
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,14 +48,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         viewColor.setBackgroundColor(color);
     }
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu,View view,ContextMenu.ContextMenuInfo menuInfo){
-        super.onCreateContextMenu(menu,view,menuInfo);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu,menu);
-    }
-
-
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -80,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
         return super.onCreateOptionsMenu(menu);
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -152,5 +141,85 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //******************* INICIO MENU PRESIONANDO IMAGEN********************
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu,View view,ContextMenu.ContextMenuInfo menuInfo){
+        super.onCreateContextMenu(menu,view,menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu,menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.iteTransparent:
+                sbrAlpha.setProgress(0);
+                break;
+
+            case R.id.iteSemiTransparent:
+                sbrAlpha.setProgress(128);
+                break;
+
+            case R.id.iteOpaque:
+                sbrAlpha.setProgress(255);
+                break;
+
+            case R.id.iteRed:
+                sbrRed.setProgress(255);
+                sbrGreen.setProgress(0);
+                sbrBlue.setProgress(0);
+                break;
+
+            case R.id.iteGreen:
+                sbrRed.setProgress(0);
+                sbrGreen.setProgress(255);
+                sbrBlue.setProgress(0);
+                break;
+
+            case R.id.iteBlue:
+                sbrRed.setProgress(0);
+                sbrGreen.setProgress(0);
+                sbrBlue.setProgress(255);
+                break;
+
+            case R.id.iteCyan:
+                sbrRed.setProgress(0);
+                sbrGreen.setProgress(255);
+                sbrBlue.setProgress(255);
+                break;
+
+            case R.id.iteMagenta:
+                sbrRed.setProgress(255);
+                sbrGreen.setProgress(0);
+                sbrBlue.setProgress(255);
+                break;
+
+            case R.id.iteYellow:
+                sbrRed.setProgress(255);
+                sbrGreen.setProgress(255);
+                sbrBlue.setProgress(0);
+                break;
+
+            case R.id.iteBlack:
+                sbrRed.setProgress(0);
+                sbrGreen.setProgress(0);
+                sbrBlue.setProgress(0);
+                break;
+
+            case R.id.iteWhite:
+                sbrRed.setProgress(255);
+                sbrGreen.setProgress(255);
+                sbrBlue.setProgress(255);
+                break;
+
+            case R.id.itePrepor:
+                Intent intent = new Intent(this, PresentedByActivity.class);
+                startActivity(intent);
+        }
+        return super.onContextItemSelected(item);
+    }
+    //******************* FIN INICIO MENU PRESIONANDO IMAGEN********************
 
 }
