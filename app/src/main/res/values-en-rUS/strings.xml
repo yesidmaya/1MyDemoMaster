@@ -16,6 +16,7 @@
     <string name="Cyan">Cyan</string>
     <string name="Magenta">Magenta</string>
     <string name="Yellow">Yellow</string>
-    <string name="Presentedby"><b>PRESENTED BY</b></string>
+    <string name="Presentedby"><b>PRESENTED BY:</b></string>
     <string name="unicaldas">Universidad de Caldas</string>
+    <string name="Presentedby_presented">Presented By</string>
 </resources>

@@ -16,8 +16,9 @@
     <string name="Cyan">Cian</string>
     <string name="Magenta">Magenta</string>
     <string name="Yellow">Amarillo</string>
-    <string name="Presentedby"><b>PRESENTADO POR</b></string>
+    <string name="Presentedby"><b>PRESENTADO POR:</b></string>
     <string name="title_activity_presented_by">PresentedByActivity</string>
     <string name="unicaldas">Universidad de Caldas</string>
     <string name="userpre">Yesid A. Maya J.</string>
+    <string name="Presentedby_presented">Presentado Por</string>
 </resources>
