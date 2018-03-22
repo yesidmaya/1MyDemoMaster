@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rojo">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="verd">Green</string>
+    <string name="azul">Blue</string>
+    <string name="alpa">Alpha</string>
+    <string name="Transparent">Transparent</string>
+    <string name="Semitransparent">SemiTransparent</string>
+    <string name="Opaque">Opaque</string>
+    <string name="Black">Black</string>
+    <string name="White">White</string>
+    <string name="Red">Red</string>
+    <string name="Green">Green</string>
+    <string name="Blue">Blue</string>
+    <string name="Cyan">Cyan</string>
+    <string name="Magenta">Magenta</string>
+    <string name="Yellow">Yellow</string>
+    <string name="Presentedby"><b>PRESENTED BY</b></string>
+    <string name="unicaldas">Universidad de Caldas</string>
+</resources>

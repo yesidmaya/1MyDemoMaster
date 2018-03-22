@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="paddingprin">10dp</dimen>
+    <dimen name="LinerLayout_height">40dp</dimen>
+    <dimen name="LInerLayoutlayout_margin">5dp</dimen>
+    <dimen name="width">100dp</dimen>
+    <dimen name="margTop">20dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="verticalMargin_preporby">42dp</dimen>
+    <dimen name="margintoppreby">84dp</dimen>
+    <dimen name="texsizename">30sp</dimen>
+    <dimen name="textsixepre">25sp</dimen>
+</resources>
